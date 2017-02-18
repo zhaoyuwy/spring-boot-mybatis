@@ -24,7 +24,7 @@ public interface DemoMappper {
      * 保存数据.
      */
     @Insert("insert into Demo(name) values(#{name})")
-//    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     public void save(Demo demo);
 
 }
